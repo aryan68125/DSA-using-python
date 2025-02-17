@@ -1,7 +1,6 @@
 class ArrangeInAscendingOrder:
     def __init__(self,arr):
         self.arr = arr
-        self.query = query
     def arrnage_in_ascending_order(self):
         self.arr.sort(reverse=True)
         return self.arr
@@ -18,6 +17,7 @@ List of possible variations that we might encounter:
 '''
 class LocateCard(ArrangeInAscendingOrder):
     def __init__(self,input):
+        super().__init__(input['input']['cards'])
         self.arr = input['input']['cards']
         self.query = input['input']['query']
     '''
